@@ -9,11 +9,11 @@ use  Symfony\Component\HttpFoundation\Response;
 class GenusControllerController 
 {
     /**
-     * @Route("/genus/{genusName}")
+     * @Route("/genus")
      */
-    public function showAction($genusName)
+    public function showAction()
     {
-        return new Response('The genus: '.$genusName);
+        return new Response('Under the sea');
     
     }
 
