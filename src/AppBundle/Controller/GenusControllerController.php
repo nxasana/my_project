@@ -8,13 +8,12 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class GenusControllerController extends Controller
 {
     /**
-     * @Route("/index")
+     * @Route("/genus/{genusName}")
      */
-    public function indexAction()
+    public function showAction($genusName)
     {
-        return $this->render('AppBundle:GenusController:index.html.twig', array(
-            // ...
-        ));
+        return new Response('The genus: '.$genusName);
+    
     }
 
 }
